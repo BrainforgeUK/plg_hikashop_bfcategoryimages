@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="hikashop" client="site">
+	<name>Brainforge Category Image Slideshow for Hikashop</name>
+	<author>Jonathan Brain</author>
+	<creationDate>November 2016</creationDate>
+	<copyright>Copyright (C) 2016 brainforge. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>team@brainforge.co.uk</authorEmail>
+	<authorUrl>www.brainforge.co.uk</authorUrl>
+	<version>0.0.1</version>
+	<description>Plugin which creates product image slideshow for category listing.</description>
+
+	<files>
+		<filename plugin="bfcategoryimages">bfcategoryimages.php</filename>
+		<filename>bfcategoryimages.js</filename>
+		<filename>bfcategoryimages.css</filename>
+		<filename>index.html</filename>
+        <folder>fields</folder>
+	</files>
+
+    <languages>
+        <language tag="en-GB">en-GB.plg_hikashop_bfcategoryimages.ini</language>
+        <language tag="en-GB">en-GB.plg_hikashop_bfcategoryimages.sys.ini</language>
+    </languages>
+
+	<config>
+	  <fields name="params">
+		<fieldset name="basic"
+				  addfieldpath="plugins/hikashop/bfcategoryimages/fields">
+			<field
+				name="categorymode" type="radio" class="btn-group"
+					label="PLG_HIKASHOP_BFCATEGORYIMAGES_CATEGORYMODE_TITLE" default="E"
+					description="PLG_HIKASHOP_BFCATEGORYIMAGES_CATEGORYMODE_DESC" >
+				<option value="I">PLG_HIKASHOP_BFCATEGORYIMAGES_INCLUDE</option>
+        <option value="E">PLG_HIKASHOP_BFCATEGORYIMAGES_EXCLUDE</option>
+			</field>
+			<field
+					name="categories" type="bfhikashopnamebox" target="category"
+					label="PLG_HIKASHOP_BFCATEGORYIMAGES_CATEGORIES_TITLE" default=""
+					description="PLG_HIKASHOP_BFCATEGORYIMAGES_CATEGORIES_DESC" >
+			</field>
+
+			<field
+				name="productmode" type="radio" class="btn-group"
+					label="PLG_HIKASHOP_BFCATEGORYIMAGES_PRODUCTMODE_TITLE" default="E"
+					description="PLG_HIKASHOP_BFCATEGORYIMAGES_PRODUCTMODE_DESC" >
+				<option value="I">PLG_HIKASHOP_BFCATEGORYIMAGES_INCLUDE</option>
+        <option value="E">PLG_HIKASHOP_BFCATEGORYIMAGES_EXCLUDE</option>
+			</field>
+			<field
+					name="products" type="bfhikashopnamebox" target="product"
+					label="PLG_HIKASHOP_BFCATEGORYIMAGES_PRODUCTS_TITLE" default=""
+					description="PLG_HIKASHOP_BFCATEGORYIMAGES_PRODUCTS_DESC" >
+			</field>
+
+			<field name="fadeintime" type="integer"
+						 default="400" first="0" last="2000" step="100"
+						 label="PLG_HIKASHOP_BFORDERDELIVERYDATE_FADEINTIME_TITLE"
+						 description="PLG_HIKASHOP_BFORDERDELIVERYDATE_FADEINTIME_DESC" />
+			<field name="fadeouttime" type="integer"
+						 default="400" first="0" last="2000" step="100"
+						 label="PLG_HIKASHOP_BFORDERDELIVERYDATE_FADEOUTTIME_TITLE"
+						 description="PLG_HIKASHOP_BFORDERDELIVERYDATE_FADEOUTTIME_DESC" />
+			<field name="displaytime" type="integer"
+						 default="2000" first="500" last="30000" step="500"
+						 label="PLG_HIKASHOP_BFORDERDELIVERYDATE_DISPLAYTIME_TITLE"
+						 description="PLG_HIKASHOP_BFORDERDELIVERYDATE_DISPLAYTIME_DESC" />
+		</fieldset>
+	  </fields>
+	</config>
+	
+</extension>

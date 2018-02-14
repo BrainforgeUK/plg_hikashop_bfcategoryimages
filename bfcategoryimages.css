@@ -1,0 +1,15 @@
+/**
+ * @copyright	Copyright (C) 2016 brainforge (www.brainforge.co.uk). All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+ 
+ .hikashop_category_product_images_for {
+  position: relative;
+ }
+ 
+ .hikashop_category_product_images_for .hikashop_category_product_images {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+ }
