@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>team@brainforge.co.uk</authorEmail>
 	<authorUrl>www.brainforge.co.uk</authorUrl>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<description>Plugin which creates product image slideshow for category listing.</description>
 
 	<files>
@@ -70,6 +70,8 @@
 	</config>
 
 	<updateservers>
-		<server type="extension" priority="1" name="Category Image Slideshow for Hikashop by BrainforgeUK">https://brainforge.co.uk/media/com_bfupdater/plg_hikashop_bfcategoryimages.xml</server>
+		<server type="extension" priority="1" name="Category Image Slideshow for Hikashop by BrainforgeUK">
+			https://brainforge.co.uk/component/bfupdater?element=plg_hikashop_bfcategoryimages.xml
+		</server>
 	</updateservers>
 </extension>
