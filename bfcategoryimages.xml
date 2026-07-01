@@ -14,7 +14,6 @@
 		<filename plugin="bfcategoryimages">bfcategoryimages.php</filename>
 		<filename>bfcategoryimages.js</filename>
 		<filename>bfcategoryimages.css</filename>
-		<filename>index.html</filename>
         <folder>fields</folder>
 	</files>
 
